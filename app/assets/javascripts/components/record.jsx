@@ -1,7 +1,7 @@
 Record = React.createClass({
     handleDelete(e) {
       e.preventDefault();
-      
+
       return $.ajax({
         method: 'DELETE',
         url: `/records/${ this.props.record.id }`,
