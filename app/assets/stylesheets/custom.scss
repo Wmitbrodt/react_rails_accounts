@@ -166,6 +166,8 @@ p {
 
 #records {
   background: #fff;
+  overflow:auto;
+  padding-bottom:150px;
 }
 
 tbody {
@@ -200,8 +202,6 @@ th {
  }
  .social {
      -webkit-transform: scale(0.8);
-     /* Browser Variations: */
-
      -moz-transform: scale(0.8);
      -o-transform: scale(0.8);
      -webkit-transition-duration: 0.5s;
@@ -233,5 +233,9 @@ th {
  /* footer */
 
  .footer {
-   padding-top: 8em;
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top: 100px;
  }

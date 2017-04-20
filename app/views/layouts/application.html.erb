@@ -15,7 +15,8 @@
 
       <%= yield %>
 
-<%= render 'layouts/footer' %>
+
+<%= render :partial => "layouts/footer"  if controller_name == "records" %>
 
 
   </body>
