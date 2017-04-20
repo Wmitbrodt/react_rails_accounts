@@ -1,24 +1,23 @@
-# README
+# Rails Retro Video Game Reviews
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![N|Solid](https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/4O4FZUVSIU.jpg)](https://wills-accounts.herokuapp.com/)
 
-Things you may want to cover:
+Personal banking application built with react-rails.
 
-* Ruby version
+# Features
 
-* System dependencies
+  - The ability to keep track of personal expenses. 
+  - Deposits.
+  - Withdrawals.
+  - Balance.
+  
+### Tech
 
-* Configuration
+Retro Video Games uses a number of open source projects:
 
-* Database creation
+* [Ruby on Rails](http://rubyonrails.org/) - Server-side web application framework written in Ruby under the MIT License.
+* [Twitter Bootstrap](http://getbootstrap.com/) - The most popular front-end framework.
+* [Font Awesome](http://fontawesome.io/) - The iconic font and CSS toolkit
+* [react-rails](https://github.com/reactjs/react-rails) - Integrate React.js with Rails views and controllers, the asset pipeline, or webpacker.
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
