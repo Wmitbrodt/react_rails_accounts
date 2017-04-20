@@ -2,3 +2,236 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+$color1: rgb(0,103,198);
+$color1-tint: rgba(2, 204, 186, 0.1);
+$color1-dark: rgb(59,116,106);
+$color2: rgb(0,198,194);
+$color2-tint: rgb(0,173,169);
+$color3: rgb(198,0,103);
+$color3-tint: rgb(173,0,90);
+$color4: #516395;
+$color5: rgb(0,198,95);
+$color5-tint: rgb(0,173,83);
+
+@mixin background-image {
+  width: 100%;
+  background-position: center center;
+  -webkit-background-size: cover!important;
+  -moz-background-size: cover!important;
+  -o-background-size: cover!important;
+  background-size: cover!important;
+}
+@mixin transition($x) {
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -o-transition: $x;
+  -ms-transition: $x;
+  transition: $x;
+}
+@mixin border-radius($x) {
+  -webkit-border-radius: $x;
+  -khtml-border-radius: $x;
+  -moz-border-radius: $x;
+  -ms-border-radius: $x;
+  -o-border-radius: $x;
+  border-radius: $x;
+}
+
+#home {
+  height: 100vh !important;
+  @include background-image;
+  background-image: linear-gradient(rgba($color1, 0.8), rgba($color2, 0.8)), url('StockSnap_4O4FZUVSIU.jpg');
+  position: relative;
+  background-size: cover!important;
+}
+
+#home-h1 {
+  color: #fff;
+  font-size: 5em;
+  padding: 3em 0 0 0;
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+#home-h3 {
+  color: #fff;
+  font-size: 2em;
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* btn */
+
+.btn-custom {
+  color: #fff;
+  padding: 2px 9px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  @include border-radius(3px);
+  @include transition(all 0.4s ease-in-out);
+  text-align: center;
+  font-size: 0.8em;
+  font-family: 'Roboto Mono', monospace;
+ &:hover {
+    color: #fff;
+    border: 1px solid $color1;
+    background-color: $color1;
+    text-decoration: none;
+ &:active {
+    background-color: $color1;
+    color: #fff;
+    text-decoration: none;
+   }
+  }
+}
+
+.btn-danger {
+  color: #fff;
+  padding: 6px 17px;
+  border: 1px solid #fff;
+  background-color: $color3;
+  @include border-radius(3px);
+  @include transition(all 0.4s ease-in-out);
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+ &:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: $color3-tint;
+    text-decoration: none;
+ &:active {
+    background-color: $color3;
+    color: #fff;
+    text-decoration: none;
+   }
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  padding: 6px 17px;
+  border: 1px solid #fff;
+  background-color: $color5;
+  @include border-radius(3px);
+  @include transition(all 0.4s ease-in-out);
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+ &:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: $color5-tint;
+    text-decoration: none;
+ &:active {
+    background-color: $color5;
+    color: #fff;
+    text-decoration: none;
+   }
+  }
+}
+
+.form-control {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Records */
+.panel {
+  margin-top: 2em!important;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.panel-success > .panel-heading {
+    color: #fff;
+    background-color: $color1;
+    border-color: $color1;
+}
+
+.panel-danger > .panel-heading {
+    color: #fff;
+    background-color: $color3;
+    border-color: $color3;
+}
+
+.panel-info > .panel-heading {
+    color: #fff;
+    background-color: $color2;
+    border-color: $color2;
+}
+
+#records {
+  background: #fff;
+}
+
+tbody {
+  background: #fff;
+}
+
+thead {
+  background: $color4;
+}
+
+th {
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.table {
+  margin-top: 2em!important;
+}
+
+.title {
+  color: $color1;
+  font-family: 'Indie Flower', cursive;
+  font-size: 4em;
+  padding-bottom: 4px;
+}
+
+/* ICONS */
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+     color: $color1;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-ig:hover {
+     color: #8a3ab9;
+ }
+ #social-em:hover {
+     color: #f39c12;
+   }
+ #social-md:hover {
+   color: $color5;
+ }
+
+ /* footer */
+
+ .footer {
+   padding-top: 8em;
+ }

@@ -6,15 +6,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Mono" rel="stylesheet">
   </head>
 
   <body>
 
 
-    <div class="container">
-      <%= yield %>
-    </div>
 
+      <%= yield %>
+
+<%= render 'layouts/footer' %>
 
 
   </body>

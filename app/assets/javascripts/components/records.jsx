@@ -43,7 +43,7 @@ Records = React.createClass({
       {className: 'records'},
       React.DOM.h2(
         {className: 'title'},
-        'Records'),
+        'Your Account'),
         React.DOM.div(
         {className: 'row'},
         React.createElement(AmountBox, {type: 'success', amount: this.deposits(), text: 'Deposits'}),

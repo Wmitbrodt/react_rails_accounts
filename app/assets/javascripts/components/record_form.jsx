@@ -27,7 +27,7 @@ RecordForm = React.createClass({
 
   render() {
     return React.DOM.form({
-      className: 'form-inline',
+      className: 'form-group',
       onSubmit: this.handleSubmit
     },
       React.DOM.div(
