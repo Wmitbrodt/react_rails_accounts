@@ -41,7 +41,7 @@ $color5-tint: rgb(0,173,83);
 #home {
   height: 100vh !important;
   @include background-image;
-  background-image: linear-gradient(rgba($color1, 0.8), rgba($color2, 0.8)), url('DeathtoStock_Meticulous-09.jpg');
+  background-image: linear-gradient(rgba($color1, 0.8), rgba($color2, 0.8)), url('https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/4O4FZUVSIU.jpg');
   position: relative;
   background-size: cover!important;
 }
