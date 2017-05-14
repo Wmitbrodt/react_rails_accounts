@@ -1,4 +1,4 @@
-# Rails Retro Video Game Reviews
+# React Rails Bank Account
 
 [![N|Solid](https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/4O4FZUVSIU.jpg)](https://wills-accounts.herokuapp.com/)
 
